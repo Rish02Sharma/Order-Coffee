@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    android:layout_height="match_parent"
+    tools:context="com.example.rishabh.justjava.MainActivity">
+
+    <EditText
+        android:id="@+id/EDIT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NAME"
+
+        android:inputType="textMultiLine" />
+    <TextView
+        android:text="Toppings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="28dp"
+
+        android:layout_marginEnd="28dp"
+        android:id="@+id/textView50"
+        android:textStyle="normal|bold"
+        android:textSize="25dp"
+      />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <CheckBox
+        android:text="Chocolate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- 5 $"
+            android:paddingLeft="20dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <CheckBox
+        android:text="Whipped Cream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox2"
+       />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- 5 $"
+            android:paddingLeft="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="top"
+        android:padding="10sp">
+
+    <TextView
+       style="@style/normal"
+        android:text="QUANTITY"
+        android:textSize="20sp"
+        android:textColor="#616161"
+        android:id="@+id/quantity"
+        android:textStyle="normal|bold"
+        android:fontFamily="serif-monospace"
+
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- 10 $ PER"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:background="#593C1F"
+            android:textColor="#ffffff"
+            android:id="@+id/button4"
+            android:onClick="Decrement"
+            style="@style/Widget.AppCompat.Button.Small"
+            />
+
+        <TextView
+            android:text="0"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:id="@+id/textView2"
+            />
+
+        <Button
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:onClick="Increment"
+            android:background="#593C1F"
+            android:textColor="#ffffff"
+            style="@style/Widget.AppCompat.Button.Small"
+            />
+
+ </LinearLayout>
+
+
+        <TextView
+        android:text="PRICE"
+            style="@style/normal"
+        android:id="@+id/textView3"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="true"
+        android:fontFamily="cursive"
+            android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:text="0$"
+        style="@style/normal"
+        android:id="@+id/zero"
+        android:textSize="20sp"
+        />
+
+
+    <Button
+        android:text="ORDER"
+        style="@style/normal"
+        android:id="@+id/button"
+        android:background="#593C1F"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="15dp"
+        android:onClick="submitOrder"
+        />
+
+
+
+
+
+    <TextView
+        android:text=""
+        style="@style/normal"
+        android:textColor="#4e342e"
+        android:id="@+id/textView"
+        android:textSize="10sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="15dp" />
+
+
+</LinearLayout>
